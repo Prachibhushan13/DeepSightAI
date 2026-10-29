@@ -1,0 +1,65 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.venv/
+.venv-*/
+venv/
+.venv-*/
+node_modules/
+dist/
+build/
+.env
+frontend/.env
+backend/.env
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.log
+coverage/
+htmlcov/
+tmp/
+.mongo_data/
+
+# Generated datasets, experiment outputs, and local editor state
+datasets/Celeb-DF-v2/
+datasets/celebdf_features/
+datasets/dfdc/
+datasets/sdfvd/
+datasets/UADFV/
+datasets/WildDeepfake/
+datasets/celebdf_manifest.csv
+evaluation_results/
+experiments/results/
+evaluation_predictions.csv
+frontend/tsconfig.tsbuildinfo
+
+# Virtual environments and caches
+.venv-torch-retrain/
+.venv-*/
+*.venv/
+
+# Local backup copies created during experimentation
+*.backup_*
+*.bak
+*.save
+
+# Model checkpoints, feature caches, and experiment outputs (1GB+): per
+# docs/MODEL_NOTES.md, these are intentionally not version-controlled.
+# Place a checkpoint at backend/artifacts/models/torch/best_checkpoint.pt
+# locally, or configure TORCH_MODEL_PATH, to run the app.
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.onnx
+*.keras
+backend/artifacts/*
+!backend/artifacts/.gitkeep
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
